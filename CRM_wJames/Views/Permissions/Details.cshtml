@@ -1,0 +1,42 @@
+﻿@model CRM_wJames.Models.Permission
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Permission</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PermissionType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PermissionType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PermissionDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PermissionDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.UserFirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.UserFirstName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PermissionID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
