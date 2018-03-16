@@ -189,6 +189,7 @@
     <Compile Include="Controllers\PermissionsController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\ProjectsController.cs" />
+    <Compile Include="Controllers\ProjectStagesController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -377,6 +378,11 @@
     <Content Include="Views\Projects\Details.cshtml" />
     <Content Include="Views\Projects\Edit.cshtml" />
     <Content Include="Views\Projects\Index.cshtml" />
+    <Content Include="Views\ProjectStages\Create.cshtml" />
+    <Content Include="Views\ProjectStages\Delete.cshtml" />
+    <Content Include="Views\ProjectStages\Details.cshtml" />
+    <Content Include="Views\ProjectStages\Edit.cshtml" />
+    <Content Include="Views\ProjectStages\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,33 @@
+﻿@model IEnumerable<CRM_wJames.Models.ProjectStage>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProjectStageName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProjectStageName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProjectStageID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProjectStageID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProjectStageID })
+        </td>
+    </tr>
+}
+
+</table>
