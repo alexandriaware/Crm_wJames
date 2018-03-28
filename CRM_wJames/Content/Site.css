@@ -2,8 +2,15 @@
     
     padding-bottom: 20px;
 }
+
+/*Aligns jumbotron text*/
 .soon {
     text-align: center;
+}
+
+/*removes link color from navbar*/
+.nav-item !important{
+    color: none;
 }
 
 /* Set to keep body from bumping up into the navbar. */
