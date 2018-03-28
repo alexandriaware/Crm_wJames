@@ -1,0 +1,39 @@
+﻿@model IEnumerable<CRM_wJames.Models.ClientContact>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Client.ClientName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contact.ContactName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client.ClientName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contact.ContactName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ClientContactID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ClientContactID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ClientContactID })
+        </td>
+    </tr>
+}
+
+</table>
